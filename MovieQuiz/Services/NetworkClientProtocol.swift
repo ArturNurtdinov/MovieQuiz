@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol NetworkClientProtocol {
+public protocol NetworkClientProtocol {
     func fetch(url: URL, handler: @escaping (Result<Data, Error>) -> Void)
 }
 
